@@ -3,12 +3,14 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+  }
 
 nav{
-    
     display: flex;
     justify-content: right;
-    background-color: rgb(11, 81, 111);
+    background-color: rgb(2, 34, 71);
 }
 
 nav > a{
@@ -17,6 +19,9 @@ nav > a{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     border: 2px black solid;
+    width: 10%;
+    height: 40px;
+    text-align: center;
     border-radius: 3px;
     color: black;
 }
@@ -26,20 +31,20 @@ nav > a{
     width: 99.5%;
     height: 700px;
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
-    background-image: url(images/city.png);
+    background-image: url(images/v627-aew-10-technologybackground.jpg);
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-y: 60%;
+    background-position-y: 50%;
 }
 
 .nome{
     font-size: 100px;
-    color: black;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -47,7 +52,7 @@ nav > a{
     display: flex;
     border: 2px solid red;
     width: 99.5%;
-    height: 700px;
+    height: auto;
     
     justify-content: space-around;
     align-items: center;
@@ -55,7 +60,50 @@ nav > a{
 }
 
 #about > div{
+    background-color: rgb(2, 34, 71);
+    border-radius: 20px;
     border: 2px solid red;
     width: 400px;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre > p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5%;
+    color: aliceblue;
+}
+
+.eu{
+    background-image: url(images/159F50BF-05CF-403A-8291-06094F3853FD_1_105_c.jpeg);
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+}
+
+#skills{
+    display: flex;
+    border: 2px solid red;
+    width: 99.5%;
+    height: auto;
+    margin-top: 20px;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#skills > div{
+    background-color: rgb(2, 34, 71);
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
