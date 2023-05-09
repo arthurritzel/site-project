@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    
+    display: flex;
+    justify-content: right;
+    background-color: rgb(11, 81, 111);
+}
+
+nav > a{
+    margin: 1%;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px black solid;
+    border-radius: 3px;
+    color: black;
+}
+
+#home{
+    border: rgb(255, 0, 0) solid 2px;
+    width: 99.5%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(images/city.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+.nome{
+    font-size: 100px;
+    color: black;
+    
+}
+
+#about{
+    display: flex;
+    border: 2px solid red;
+    width: 99.5%;
+    height: 700px;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about > div{
+    border: 2px solid red;
+    width: 400px;
+    height: 600px;
+}
