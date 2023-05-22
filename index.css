@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body{
+    height: 10000px;
+    background-image: linear-gradient(rgb(23, 22, 22), #103973, #306fb8
+    );
+}
+
 html{
     scroll-behavior: smooth;
   }
@@ -10,7 +16,6 @@ html{
 nav{
     display: flex;
     justify-content: right;
-    background-color: rgb(2, 34, 71);
 }
 
 nav > a{
@@ -23,87 +28,19 @@ nav > a{
     height: 40px;
     text-align: center;
     border-radius: 3px;
-    color: black;
+    color: white
 }
 
 #home{
-    border: rgb(255, 0, 0) solid 2px;
-    width: 99.5%;
-    height: 700px;
     display: flex;
-
     justify-content: center;
     align-items: center;
-
-    background-image: url(images/v627-aew-10-technologybackground.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
+    border: 2px white solid;
+    height: 500px;
 }
 
 .nome{
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-    
-}
-
-#about{
-    display: flex;
-    border: 2px solid red;
-    width: 99.5%;
-    height: auto;
-    
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#about > div{
-    background-color: rgb(2, 34, 71);
-    border-radius: 20px;
-    border: 2px solid red;
-    width: 400px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sobre > p{
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5%;
     color: aliceblue;
-}
-
-.eu{
-    background-image: url(images/159F50BF-05CF-403A-8291-06094F3853FD_1_105_c.jpeg);
-    background-size: 210%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    
-}
-
-#skills{
-    display: flex;
-    border: 2px solid red;
-    width: 99.5%;
-    height: auto;
-    margin-top: 20px;
-    
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#skills > div{
-    background-color: rgb(2, 34, 71);
-    border-radius: 20px;
-    border: 2px solid red;
-    width: 400px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 129px;
 }
