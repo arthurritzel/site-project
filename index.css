@@ -34,6 +34,9 @@ nav > input{
 .banner{
     width: 100%;
 }
+.banner1{
+    display: none;
+}
 
 #home {
     display: grid;
@@ -66,6 +69,10 @@ nav > input{
     display: flex;
     margin: 20px;
   }
+  .fil{
+    display: flex;
+    margin-left: 40px;
+}
   main {
     grid-area: main;
     background-color: rgb(201, 206, 206);
@@ -108,8 +115,12 @@ nav > input{
 @media all and (min-width: 250px) and (max-width: 478px) and (orientation: portrait){
     
     .banner{
-        height: 15vh;
+        display: none;
     }
+    .banner1{
+        display: block;
+        width:100%;
+      }
     nav{
         justify-content: space-between;
     }
