@@ -1,46 +1,165 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    /* border: red 2px solid; */
 }
-
-body{
-    height: 10000px;
-    background-image: linear-gradient(rgb(23, 22, 22), #103973, #306fb8
-    );
-}
-
-html{
-    scroll-behavior: smooth;
-  }
 
 nav{
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(3, 48, 83);
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 35px;
 }
 
 nav > a{
-    margin: 1%;
-    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    border: 2px black solid;
-    width: 10%;
-    height: 40px;
-    text-align: center;
-    border-radius: 3px;
-    color: white
+    color: white;
+    font-size: 20px;
+    
 }
 
-#home{
+nav > input{
+    width: 40%;
+}
+
+.banner{
+    width: 100%;
+}
+
+#home {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas:
+      "side main main"
+      "side main main"
+      "side main main"
+    ;
+    background-color: rgb(201, 206, 206);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
+  }
+  
+ 
+  .sidebar {
+    grid-area: side;
+    background-color: rgb(3, 48, 83);
     display: flex;
+    flex-direction: column;
+  }
+  .sidebar > p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .filtro{
+    display: flex;
+    margin: 20px;
+  }
+  main {
+    grid-area: main;
+    background-color: rgb(201, 206, 206);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border: 2px white solid;
-    height: 500px;
+  }
+ 
+
+#home p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(3, 48, 83);
+    border-radius: 5px;
 }
 
-.nome{
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 129px;
+
+.produto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+
+    height: 280px;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+}
+.produto img{
+    padding: 10px;
+    width: 75%;
+
+}
+
+
+@media all and (min-width: 250px) and (max-width: 478px) and (orientation: portrait){
+    
+    .banner{
+        height: 15vh;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    nav img {
+        width: 80%
+    }
+    
+    #home{
+        grid-template-areas:
+        "main main main"
+        "main main main"
+        "main main main";
+    }
+    main{
+        background-color: rgb(52, 65, 84);
+    }
+    .sidebar{
+        visibility: hidden;
+        position: absolute;
+    }
+    .produto{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .produto img {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 700px) and (orientation: portrait){
+    
+    #home{
+        grid-template-areas:
+        "side main main "
+        "side main main "
+        "side main main ";
+        grid-template-columns: 0.35fr 1fr;
+    }
+}
+
+
+@media /*handheld and*/ (300px <= width <= 1000px) and (orientation: landscape){
+  
+   main{  
+    background-color: brown;
+   }
+    .produto{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+    } 
 }
